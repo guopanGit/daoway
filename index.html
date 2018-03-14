@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> 到位APP</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<header id="header">
+  <nav class="header-nav">
+    <div class="left">
+      <a href="">
+        <img src="./images/nav/logo.png" alt="logo">
+      </a>
+    </div>
+    <div class="right">
+      <a href="" class="nav-left">
+        <img src="./images/nav/citypoint.png" alt="">
+        <span>北京</span>
+        <span>切换城市</span>
+      </a >
+      <ul class="nav-right">
+        <li><a href="JavaScript:">首页</a></li>
+        <li><a href="JavaScript:">到位APP</a></li>
+        <li><a href="JavaScript:">服务商</a></li>
+        <li><a href="JavaScript:">商家入驻</a></li>
+        <li><a href="JavaScript:">风物APP</a></li>
+        <li><a href="JavaScript:">关于我们</a></li>
+        <li><a href="JavaScript:">商家登录</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<div class="wrap">
+  <ul>
+    <li class="li1" style="z-index: 3; opacity:1">
+      <img src="./images/nav/banner1.jpg" alt="">
+    </li>
+    <li class="li2" style="z-index: 2;opacity:1">
+      <img src="./images/nav/banner2.jpg" alt="">
+    </li>
+    <li class="li3" style="z-index: 1;opacity:1">
+      <img src="./images/nav/banner3.jpg" alt="">
+    </li>
+  </ul>
+  <div>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<script type="text/javascript" src="./js/jquery-1.10.1.js"></script>
+<script type="text/javascript">
+    $(function () {
+      setInterval(function () {
+        $('.li1').css('opacity',0)
+      },1000)
+      setTimeout(function () {
+        $('.li2').css('opacity',0)
+      },2000)
+      setTimeout(function () {
+        $('.li3').css('opacity',0)
+        $('.li1').css('opacity',1)
+      },4000)
+    })
+</script>
+</body>
+</html>
