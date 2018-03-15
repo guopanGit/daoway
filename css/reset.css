@@ -53,6 +53,9 @@ a {
   text-decoration: none;
   -webkit-backface-visibility: hidden;
 }
+i{
+  font-style:normal
+}
 
 li {
   list-style: none;

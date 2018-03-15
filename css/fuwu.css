@@ -1,0 +1,111 @@
+#header {
+  width: 100%;
+  min-width: 1251px;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+  opacity: 0.9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+#header .header-nav {
+  width: 85%;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: 16px latoregular, Verdana, sans-serif;
+}
+#header .right {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+#header .right ul li:last-child a {
+  text-align: center;
+  display: inline-block;
+  border-radius: 10px;
+  width: 76px;
+  height: 28px;
+  background-color: #f00;
+  color: #fff;
+  padding-top: 5px;
+}
+#header .right >a :nth-child(3) {
+  color: #f00;
+}
+#header .right .nav-left {
+  color: #000;
+}
+#header .right .nav-left >span {
+  font-weight: bold;
+  font-style: normal;
+}
+#header .right .nav-right {
+  white-space: nowrap;
+}
+#header .right .nav-right >li {
+  display: inline-block;
+  margin: 0 10px;
+}
+#header .right .nav-right >li >a {
+  color: #000;
+  font-weight: bold;
+}
+.warp {
+  margin-top: 71px;
+}
+.warp .nav h2 {
+  display: block;
+  line-height: 85px;
+}
+.warp .nav h2 a {
+  color: #000;
+  font-weight: 700;
+}
+.warp .content-warp {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.warp .centerleft-right {
+  width: 230px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+}
+.warp .centerleft-right .right-top {
+  height: 356px;
+}
+.warp .centerleft-right .right-top h3 {
+  line-height: 60px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.warp .centerleft-right .right-top img {
+  text-align: center;
+  margin: 40px 75px;
+  margin-bottom: 10px;
+  width: 80px;
+}
+.warp .centerleft-right .right-top span {
+  text-align: center;
+  display: inline-block;
+  width: 228px;
+  height: 36px;
+  font-weight: bold;
+}
+.warp .centerleft-right .right-top p {
+  display: flex;
+  margin: 15px 10px;
+  justify-content: space-between;
+  color: #f00;
+}
+.warp .centerleft-right .right-under {
+  background-image: url("./images/fuwu/tuijianfuwushang_06.jpg");
+}
