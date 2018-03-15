@@ -69,17 +69,101 @@
 .warp .content-warp {
   width: 80%;
   display: flex;
-  justify-content: center;
 }
-.warp .centerleft-right {
-  width: 230px;
+.warp .centerleft-left .left-top {
+  width: 960px;
   background-color: #fff;
   border: 1px solid #e5e5e5;
+  margin-left: 60px;
+  display: flex;
+  justify-content: space-between;
 }
-.warp .centerleft-right .right-top {
+.warp .centerleft-left .left-top .left-top-left {
+  display: flex;
+}
+.warp .centerleft-left .left-top img {
+  width: 160px;
+  height: 160px;
+  margin: 30px;
+}
+.warp .centerleft-left .left-top .spm {
+  box-sizing: border-box;
+  margin: 10px 30px 30px 0;
+  padding-top: 30px;
+}
+.warp .centerleft-left .left-top span {
+  margin: 20px 0;
+}
+.warp .centerleft-left .left-top p {
+  margin: 20px 20px 20px 0;
+  font-size: 16px;
+}
+.warp .centerleft-left .left-top p span {
+  text-decoration: line-through;
+}
+.warp .centerleft-left .left-top p i {
+  color: #f00;
+  margin-right: 30px;
+}
+.warp .centerleft-left .left-top b {
+  font-size: 20px;
+  color: #f00;
+}
+.warp .centerleft-left .left-top .left-top-right {
+  text-align: center;
+}
+.warp .centerleft-left .left-top .left-top-right img {
+  width: 110px;
+  height: 110px;
+  margin-bottom: 6px;
+}
+.warp .centerleft-left .left-top .left-top-right div {
+  font-size: 16px;
+}
+.warp .centerleft-left .left-top .left-top-right div i {
+  display: inline-block;
+  color: #f00;
+  margin: 15px 0;
+}
+.warp .content-warp .left-bottom {
+  background-color: #fff;
+  margin-left: 60px;
+  margin-top: 15px;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+.warp .title {
+  display: inline-block;
+  margin: 20px 30px;
+  height: 28px;
+  border-bottom: 3px #f00 solid;
+}
+.warp p {
+  margin-left: 50px;
+  font-size: 18px;
+  line-height: 20px;
+}
+.warp .title-i {
+  margin: 0 0 20px 50px;
+  line-height: 50px;
+}
+.warp .color-i {
+  color: #f00;
+}
+.warp .title-wrap {
+  background-color: #fffcf1;
+}
+.warp .content-warp .centerleft-right {
+  margin-left: 15px;
+  width: 230px;
+}
+.warp .right-top {
+  width: 230px;
   height: 356px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
 }
-.warp .centerleft-right .right-top h3 {
+.warp .right-top h3 {
   line-height: 60px;
   height: 60px;
   font-size: 20px;
@@ -87,25 +171,109 @@
   padding-left: 10px;
   border-bottom: 1px solid #e5e5e5;
 }
-.warp .centerleft-right .right-top img {
+.warp .right-top img {
   text-align: center;
   margin: 40px 75px;
   margin-bottom: 10px;
   width: 80px;
 }
-.warp .centerleft-right .right-top span {
+.warp .right-top span {
   text-align: center;
   display: inline-block;
   width: 228px;
   height: 36px;
   font-weight: bold;
 }
-.warp .centerleft-right .right-top p {
+.warp .right-top p {
   display: flex;
   margin: 15px 10px;
-  justify-content: space-between;
+  justify-content: space-around;
   color: #f00;
 }
-.warp .centerleft-right .right-under {
-  background-image: url("./images/fuwu/tuijianfuwushang_06.jpg");
+.warp .right-under {
+  width: 230px;
+  height: 290px;
+  text-align: center;
+  margin-top: 10px;
+  background-image: url("../images/fuwu/tuijianfuwushang_06.jpg");
+}
+.warp .right-under img {
+  width: 130px;
+  height: 130px;
+  margin-top: 50px;
+}
+.baozhang {
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-top: 50px;
+  background-color: #fff;
+}
+background-color white,
+h2 {
+  font-size: 30px;
+  font-weight: 800;
+  font-family: "微软雅黑";
+  margin: 15px;
+}
+background-color white span,
+h2 span {
+  font-weight: 800;
+  color: #f00;
+}
+p {
+  font-size: 22px;
+  color: #3d3838;
+  margin-bottom: 10px;
+}
+ul li {
+  display: inline-block;
+  color: #1d1515;
+  font-size: 18px;
+}
+.city {
+  position: relative;
+  background-color: #fff;
+  padding-top: 60px;
+}
+.city span {
+  font-size: 20px;
+  font-weight: 700;
+}
+.city ul {
+  display: flex;
+  margin-left: 100px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  justify-content: space-around;
+}
+.partners {
+  position: relative;
+  padding-top: 60px;
+}
+.partners span {
+  font-size: 20px;
+  font-weight: 700;
+}
+.partners ul {
+  display: flex;
+  margin-left: 100px;
+  margin-bottom: 30px;
+  justify-content: space-around;
+  text-align: center;
+}
+.partners ul li {
+  width: 10%;
+  height: 60px;
+  background-color: #fff;
+  padding: 6px 0;
+  box-sizing: border-box;
+}
+.partners ul img {
+  width: 100px;
+}
+.partners p {
+  text-align: center;
+  font-size: 14px;
 }

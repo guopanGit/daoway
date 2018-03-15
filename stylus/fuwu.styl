@@ -56,14 +56,80 @@
   & .content-warp
     width 80%
     display flex
-    justify-content center
 
-  & .centerleft-right
-    width 230px
+  & .centerleft-left .left-top
+    width 960px
     background-color white
     border 1px solid #e5e5e5
+    margin-left 60px
+    display flex
+    justify-content space-between
+    & .left-top-left
+        display flex
+      & img
+       width 160px
+       height 160px
+       margin 30px
+    & .spm
+       box-sizing border-box
+       margin 10px  30px 30px 0
+       padding-top 30px
+      & span
+        margin 20px 0
+      & p
+        margin 20px 20px 20px  0
+        font-size 16px
+        & span
+          text-decoration line-through
+        & i
+          color red
+          margin-right 30px
+      & b
+        font-size 20px
+        color red
+
+    & .left-top-right
+      text-align center
+      & img
+        width 110px
+        height 110px
+        margin-bottom 6px
+      & div
+        font-size 16px
+        & i
+            display inline-block
+            color red
+            margin 15px 0
+  .content-warp .left-bottom
+      background-color white
+      margin-left 60px
+      margin-top 15px
+      padding-bottom 20px
+      margin-bottom 50px
+    & .title
+        display inline-block
+        margin 20px 30px
+        height 28 px
+        border-bottom 3px red solid
+    & p
+       margin-left 50px
+       font-size 18px
+       line-height 20px
+    & .title-i
+       margin 0 0 20px 50px
+       line-height 50px
+    & .color-i
+       color red
+    & .title-wrap
+      background-color #fffcf1
+  .content-warp .centerleft-right
+      margin-left 15px
+      width 230px
     & .right-top
+      width 230px
       height 356px
+      border 1px solid #e5e5e5
+      background-color white
       & h3
         line-height 60px
         height 60px
@@ -85,7 +151,77 @@
       & p
         display flex
         margin 15px 10px
-        justify-content space-between
+        justify-content space-around
         color red
     & .right-under
-        background-image url('./images/fuwu/tuijianfuwushang_06.jpg')
+        width 230px
+        height 290px
+        text-align  center
+        margin-top 10px
+        background-image url('../images/fuwu/tuijianfuwushang_06.jpg')
+    .right-under img
+        width 130px
+        height 130px
+        margin-top 50px
+.baozhang
+  text-align center
+  position relative
+  top 0
+  left 0
+  padding-top 50px
+  background-color white
+background-color white
+& h2
+  font-size 30px
+  font-weight 800
+  font-family "微软雅黑"
+  margin 15px
+  & span
+    font-weight 800
+    color red
+& p
+  font-size 22px
+  color #3d3838
+  margin-bottom 10px
+& ul li
+  display inline-block
+  color #1d1515
+  font-size 18px
+.city
+  position relative
+  background-color white
+  padding-top 60px
+  & span
+    font-size 20px
+    font-weight 700
+  & ul
+    display flex
+    margin-left 100px
+    margin-bottom 10px
+    padding-bottom 20px
+    justify-content space-around
+
+
+.partners
+  position relative
+  padding-top 60px
+  & span
+    font-size 20px
+    font-weight 700
+  & ul
+    display flex
+    margin-left 100px
+    margin-bottom 30px
+    justify-content space-around
+    text-align center
+    & li
+      width 10%
+      height 60px
+      background-color white
+      padding 6px 0
+      box-sizing border-box
+    & img
+      width 100px
+  & p
+    text-align center
+    font-size 14px
