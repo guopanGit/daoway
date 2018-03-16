@@ -1,8 +1,12 @@
 {
-  "name": "daoway",
-  "version": "1.0.0",
+  "name": "daomay",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
   "dependencies": {
-    "express": "^4.16.3",
+    "express": "^4.15.5",
     "mongoose": "^5.0.10"
   }
 }

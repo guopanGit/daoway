@@ -1,14 +1,20 @@
-#header
-  width 100%
-  min-width 1251px
-  border-bottom 1px solid #e5e5e5
-  background-color #ffffff
-  opacity 0.9
+.header
   position fixed
   top 0
   left 0
   right 0
   z-index 100
+  opacity 0.9
+  animation active 1s
+  @keyframes active
+    0% {transform: translateY(-100%)}
+    100% {transform: translateY(0)}
+.header-warp
+  width 100%
+  min-width 1251px
+  border-bottom 1px solid #e5e5e5
+  background-color #ffffff
+
   .header-nav
     width 85%
     height 70px
@@ -47,7 +53,6 @@
           font-weight bold
 .Swiper-warp
   position relative
-  top 71px
  & .swiper-container
     .swiper-wrapper
       .swiper-slide
@@ -90,24 +95,20 @@
       background-color #ffffff
       position relative
       left 100%
-      top -41px
+
       &>li
         padding-top  20px
         & a
           font-weight 500
           color black
-.navigation-wrap
-  position relative
-  top 490px
+
+
 .navigation
-  width 100%
-  height 516px
+  margin-left 50px
+  width 90%
   text-align center
-  position relative
-  top -421px
   background-color white
   & .wrap-top
-    height 71px
     & h1
       font-weight bold
       font-size 28px
@@ -117,7 +118,7 @@
       min-width 1000px
       & a
         color #3d3838
-        font-size 26px
+        font-size 20px
   & .lookMore a
     position relative
     top -25px
@@ -127,10 +128,10 @@
     justify-content space-around
     & a
       text-align left
+      box-sizing border-box
       border 1px solid #eaeaea
-      padding 10px
-      margin 80px 0
-
+      padding 5px
+      width 18%
       line-height 20px
       & h3
         font-size 20px
@@ -142,8 +143,9 @@
         color #929292
         font-size 14px
       & img
-        width 210px
-        height 210px
+        width 190px
+        height 190px
+        margin-left 15px
       & div
         font-size 14px
         color red
@@ -159,15 +161,9 @@
           border-radius 5px
           line-height 22px
 
-
 .baozhang-warp
-  position relative
-  top 490px
   .baozhang
     text-align center
-    position relative
-    top -421px
-    left 0px
     padding-top 50px
     background-color white
     & h2
@@ -187,8 +183,6 @@
       color #1d1515
       font-size 18px
   .city
-    position relative
-    top -421px
     background-color white
     padding-top 60px
     & span
@@ -200,10 +194,7 @@
       margin-bottom 10px
       padding-bottom 20px
       justify-content space-around
-
   .partners
-    position relative
-    top -421px
     padding-top 60px
     & span
       font-size 20px

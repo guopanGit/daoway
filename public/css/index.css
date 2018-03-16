@@ -1,16 +1,51 @@
-#header {
-  width: 100%;
-  min-width: 1251px;
-  border-bottom: 1px solid #e5e5e5;
-  background-color: #fff;
-  opacity: 0.9;
+.header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
+  opacity: 0.9;
+  animation: active 1s;
 }
-#header .header-nav {
+@-moz-keyframes active {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes active {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-o-keyframes active {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes active {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.header-warp {
+  width: 100%;
+  min-width: 1251px;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+.header-warp .header-nav {
   width: 85%;
   height: 70px;
   margin: 0 auto;
@@ -19,12 +54,12 @@
   align-items: center;
   font: 16px latoregular, Verdana, sans-serif;
 }
-#header .right {
+.header-warp .right {
   width: 70%;
   display: flex;
   justify-content: space-between;
 }
-#header .right ul li:last-child a {
+.header-warp .right ul li:last-child a {
   text-align: center;
   display: inline-block;
   border-radius: 10px;
@@ -34,30 +69,29 @@
   color: #fff;
   padding-top: 5px;
 }
-#header .right >a :nth-child(3) {
+.header-warp .right >a :nth-child(3) {
   color: #f00;
 }
-#header .right .nav-left {
+.header-warp .right .nav-left {
   color: #000;
 }
-#header .right .nav-left >span {
+.header-warp .right .nav-left >span {
   font-weight: bold;
   font-style: normal;
 }
-#header .right .nav-right {
+.header-warp .right .nav-right {
   white-space: nowrap;
 }
-#header .right .nav-right >li {
+.header-warp .right .nav-right >li {
   display: inline-block;
   margin: 0 10px;
 }
-#header .right .nav-right >li >a {
+.header-warp .right .nav-right >li >a {
   color: #000;
   font-weight: bold;
 }
 .Swiper-warp {
   position: relative;
-  top: 71px;
 }
 .swiper-container .swiper-wrapper .swiper-slide >img {
   position: relative;
@@ -105,7 +139,6 @@
   background-color: #fff;
   position: relative;
   left: 100%;
-  top: -41px;
 }
 .Menu-wrap .two-menu>li {
   padding-top: 20px;
@@ -114,20 +147,11 @@
   font-weight: 500;
   color: #000;
 }
-.navigation-wrap {
-  position: relative;
-  top: 490px;
-}
 .navigation {
-  width: 100%;
-  height: 516px;
+  margin-left: 50px;
+  width: 90%;
   text-align: center;
-  position: relative;
-  top: -421px;
   background-color: #fff;
-}
-.navigation .wrap-top {
-  height: 71px;
 }
 .navigation .wrap-top h1 {
   font-weight: bold;
@@ -140,7 +164,7 @@
 }
 .navigation .wrap-top span a {
   color: #3d3838;
-  font-size: 26px;
+  font-size: 20px;
 }
 .navigation .lookMore a {
   position: relative;
@@ -153,9 +177,10 @@
 }
 .navigation .ServiceBorder a {
   text-align: left;
+  box-sizing: border-box;
   border: 1px solid #eaeaea;
-  padding: 10px;
-  margin: 80px 0;
+  padding: 5px;
+  width: 18%;
   line-height: 20px;
 }
 .navigation .ServiceBorder a h3 {
@@ -170,8 +195,9 @@
   font-size: 14px;
 }
 .navigation .ServiceBorder a img {
-  width: 210px;
-  height: 210px;
+  width: 190px;
+  height: 190px;
+  margin-left: 15px;
 }
 .navigation .ServiceBorder a div {
   font-size: 14px;
@@ -190,15 +216,8 @@
   border-radius: 5px;
   line-height: 22px;
 }
-.baozhang-warp {
-  position: relative;
-  top: 490px;
-}
 .baozhang-warp .baozhang {
   text-align: center;
-  position: relative;
-  top: -421px;
-  left: 0px;
   padding-top: 50px;
   background-color: #fff;
 }
@@ -223,8 +242,6 @@
   font-size: 18px;
 }
 .baozhang-warp .city {
-  position: relative;
-  top: -421px;
   background-color: #fff;
   padding-top: 60px;
 }
@@ -240,8 +257,6 @@
   justify-content: space-around;
 }
 .baozhang-warp .partners {
-  position: relative;
-  top: -421px;
   padding-top: 60px;
 }
 .baozhang-warp .partners span {
