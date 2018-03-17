@@ -1,13 +1,49 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  opacity: 0.9;
+  animation: active 1s;
+}
+@-moz-keyframes active {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes active {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-o-keyframes active {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes active {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 #header {
   width: 100%;
   min-width: 1251px;
   border-bottom: 1px solid #e5e5e5;
   background-color: #fff;
-  opacity: 0.9;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   z-index: 100;
 }
 #header .header-nav {
@@ -54,9 +90,6 @@
 #header .right .nav-right >li >a {
   color: #000;
   font-weight: bold;
-}
-.warp {
-  margin-top: 71px;
 }
 .warp .nav h2 {
   display: block;

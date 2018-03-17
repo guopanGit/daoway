@@ -1,13 +1,19 @@
+.header
+  position fixed
+  top 0
+  left 0
+  right 0
+  z-index 100
+  opacity 0.9
+  animation active 1s
+  @keyframes active
+    0% {transform: translateY(-100%)}
+    100% {transform: translateY(0)}
 #header
   width 100%
   min-width 1251px
   border-bottom 1px solid #e5e5e5
   background-color #ffffff
-  opacity 0.9
-  position fixed
-  top 0
-  left 0
-  right 0
   z-index 100
   .header-nav
     width 85%
@@ -46,7 +52,7 @@
           color black
           font-weight bold
 .warp
-  margin-top 71px
+
   & .nav h2
     display block
     line-height 85px

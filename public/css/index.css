@@ -90,6 +90,9 @@
   color: #000;
   font-weight: bold;
 }
+.header-warp .right .nav-right >li >a:hover {
+  color: #f00;
+}
 .Swiper-warp {
   position: relative;
 }
@@ -182,6 +185,9 @@
   padding: 5px;
   width: 18%;
   line-height: 20px;
+}
+.navigation .ServiceBorder a:hover {
+  box-shadow: 5px 5px 10px #ccc;
 }
 .navigation .ServiceBorder a h3 {
   font-size: 20px;

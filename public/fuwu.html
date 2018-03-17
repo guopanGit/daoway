@@ -176,32 +176,19 @@
       <li>北京</li>
     </ul>
   </div>
-  <div class="partners">
-    <span>合作伙伴</span>
-    <ul>
-      <li><img src="./images/meidao.png"></li>
-      <li><img src="./images/meidao.png"></li>
-      <li><img src="./images/meidao.png"></li>
-      <li><img src="./images/meidao.png"></li>
-      <li><img src="./images/meidao.png"></li>
-      <li><img src="./images/meidao.png"></li>
-      <li><img src="./images/meidao.png"></li>
-      <li><img src="./images/meidao.png"></li>
-      <li><img src="./images/meidao.png"></li>
-    </ul>
-    <ul>
-      <li><img src="./images/meidao.png"></li>
-      <li><img src="./images/meidao.png"></li>
-      <li><img src="./images/meidao.png"></li>
-      <li><img src="./images/meidao.png"></li>
-      <li><img src="./images/meidao.png"></li>
-      <li><img src="./images/meidao.png"></li>
-      <li><img src="./images/meidao.png"></li>
-      <li><img src="./images/meidao.png"></li>
-      <li><img src="./images/meidao.png"></li>
-    </ul>
     <p>©2015 版权所有 到位 daoway.com 京ICP备15001471号-1 北京邻家科技有限公司</p>
-  </div>
 </div>
+<script type="text/javascript" src="./js/jquery-1.10.1.js"></script>
+<script type="text/javascript">
+  $(window).scroll(function () {
+    let $top = $('.header-warp').height()
+    let $scrollTop = $(window).scrollTop()
+    if ($scrollTop > $top) {
+      $('header').addClass('header')
+    } else {
+      $('header').removeClass('header')
+    }
+  })
+</script>
 </body>
 </html>
