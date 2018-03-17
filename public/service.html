@@ -126,17 +126,16 @@
 <script type="text/javascript">
   $.get('/shopsList', (data) => {
     $('#wrap-s').append(template('temp1',{data:data}))
-    console.log(data);
   })
 </script>
 <script id="temp1" type="text/html">
-  {{each data.list}}
+  {{each data.data}}
   <li>
     <img src="{{$value.imgUrl}}">
     <p class="p1">
-                <span>
-                  <img src="images/fuwushang/home1.png">{{$value.title}}
-                </span>
+      <span>
+        <img src="images/fuwushang/home1.png">{{$value.title}}
+      </span>
     </p>
     <p class="p2">
       <span class="p2-1">已接单{{$value.orderCount}}单</span>

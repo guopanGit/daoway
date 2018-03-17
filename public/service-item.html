@@ -122,21 +122,21 @@
           <div class="conment"></div>
 
           <div class="pages">
-            <a href="" class="up nopage">上一页</a>
+            <a href="javascript:" class="up nopage">上一页</a>
             <div class="showpage">
-              <a href="" class="num act">1</a>
-              <a href="" class="num">2</a>
-              <a href="" class="num">3</a>
-              <a href="" class="num">4</a>
-              <a href="" class="num">5</a>
-              <a href="" class="num">6</a>
-              <a href="" class="num">7</a>
-              <a href="" class="num">8</a>
-              <a href="" class="num">9</a>
-              <a href="" class="num">10</a>
+              <a href="javascript:" class="num act">1</a>
+              <a href="javascript:" class="num">2</a>
+              <a href="javascript:" class="num">3</a>
+              <a href="javascript:" class="num">4</a>
+              <a href="javascript:" class="num">5</a>
+              <a href="javascript:" class="num">6</a>
+              <a href="javascript:" class="num">7</a>
+              <a href="javascript:" class="num">8</a>
+              <a href="javascript:" class="num">9</a>
+              <a href="javascript:" class="num">10</a>
               ...
             </div>
-            <a href="" class="down">下一页></a>
+            <a href="javascript:" class="down">下一页></a>
           </div>
         </div>
 
@@ -219,24 +219,38 @@
 <script type="text/javascript" src="./js/jquery-1.10.1.js"></script>
 <script type="text/javascript" src="./js/template-web.js"></script>
 <script type="text/javascript">
+  let page = 1
   $(function () {
+
     $(document).scroll(function () {
-      if($(this).scrollTop()>=71){
+      if ($(this).scrollTop() >= 71) {
         $('#header').addClass('ani')
-      }else{
+      } else {
         $('#header').removeClass('ani')
       }
     })
-    $.get('serviceItem', (data) => {
-      $('.conments').append(template('temp2', {data:data}))
-      console.log(data);
-      console.log($('.conments') ,{data:data},111);
+    $.get('/serviceItem?page=' + page, (data) => {
+      $('.conment').html(template('temp2', {data}))
+      console.log({data});
+      const $aList = $('.showpage > a')
+      $aList.click(function () {
+        $aList.removeClass('act')
+        $(this).addClass('act')
+        let index = $(this).index()
+        page = ++index
+        console.log(page);
+        $.get('/serviceItem?page=' + page, (data) => {
+          $('.conment').html(template('temp2', {data}))
+          console.log({data});
+        })
+      })
+
+
     })
   })
 </script>
 <script id="temp2" type="text/html">
-  {{each data.list}}
-  <div class="conment">
+  {{each data.data}}
     <img src="{{$value.iconUrl}}">
     <ul>
       <li class="username">{{$value.nick}}</li>
@@ -256,7 +270,6 @@
         {{$value.city}}{{$value.area}}
       </li>
     </ul>
-  </div>
   {{/each}}
 </script>
 </body>
